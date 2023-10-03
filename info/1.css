@@ -1,0 +1,72 @@
+.articulo_1{
+	margin: 20px 50px;
+	text-align: center;
+}
+
+.articulo_1 h2{
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+
+.section-1{
+	display: flex;
+}
+
+
+.section-1 p{
+	font-size: 25px;
+	text-align: left;
+	padding-right: 50px;
+}
+
+.ubi__container{
+	display: flex;
+	margin-top: -30px;
+	animation-name: aparicion;
+	animation-duration: 3s;
+}
+
+.ubi{
+	align-self: center;
+	display: flex;
+}
+
+.ubicacion{
+	border-radius: 20px;
+	box-shadow: 1px 1px 50px 3px #666;
+}
+
+@media (max-width: 830px){
+	.section-1{
+		flex-direction: column;
+	}
+
+	.section-1 p{
+		text-align: center;
+		padding: 0px;
+	}
+
+	.ubi__container{
+		align-self: center;
+		margin: 50px 0px;
+		width: 350px;
+	}
+	.ubicacion{
+		width: 350px;
+		margin: 0px;
+		align-self: center;
+	}
+
+	.ubicacion:hover{
+		width: 350px;
+		height: 150px;
+		transition-duration: 1.5s;
+	}
+}
+
+
+@keyframes aparicion{
+	0%{
+		transform: scale(0);
+	}
+}

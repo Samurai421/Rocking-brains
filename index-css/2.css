@@ -1,0 +1,70 @@
+.texto{
+	margin: 20px 50px;
+	font-size: 25px;
+	animation-name: animation-1;
+	animation-delay: 1.3s;
+	animation-duration: 2.5s;
+	animation-fill-mode: both;	
+}
+
+.section-2 h3{
+	font-size: 40px;
+	text-align: center;
+	animation-name: animation-1;
+	animation-delay: 1.3s;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+}
+
+.img-1{
+	margin: 20px 50px;
+	text-align: center;
+	animation-name: animation-1;
+	animation-delay: 1.7s;
+	animation-duration: 2.5s;
+	animation-fill-mode: both;
+}
+
+.img-1 img{
+	max-width: 300px;
+	min-width: 100px;
+	border-radius: 20px;
+	animation-name: animation-1;
+	animation-delay: 1.7s;
+	animation-duration: 1.3s;
+	animation-fill-mode: both;
+	width: var(--afa);
+	height: var(--asdb);
+}
+
+@media (max-width: 825px){
+	.texto{
+		text-align: center;
+		margin: 20px 25px;
+		animation: none;
+	}
+
+	.section-2 h3{
+		padding: 10px;
+		animation: none;
+	}
+
+	.img-1 img{
+		animation: none;
+	}
+}
+
+@media (max-width: 360px){
+	.section-2 h3{
+		margin: 30px;
+	}
+}
+
+
+@keyframes animation-1{
+	0%{
+		color: transparent;
+		text-shadow: 0px 0px 4.5px transparent;
+		transform: translateX(-1000px);
+	}
+}

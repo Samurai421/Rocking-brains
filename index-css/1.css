@@ -1,0 +1,123 @@
+.titulo-container{
+	position: absolute;
+	display: inline-block;
+	top: var(--top-var);
+	margin: 10px 20px;
+	background-image: url(../fondo.png);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-clip: border-box;
+	background-size: contain;	
+	text-align: center;
+	color: #fff;
+	border-radius: 15px;
+	text-shadow:  1px 5px 8px #000;
+}
+
+.titulo{
+	font-size: 80px;
+	margin-bottom: 20px;
+	animation-name: titulo;
+	animation-delay: 1s;
+	animation-duration: 1.3s;
+	animation-fill-mode: both;
+}
+
+.titulo-2{
+	font-size: 50px;
+	margin-bottom: 30px;
+	animation-name: titulo;
+	animation-delay: 1.5s;
+	animation-duration: 1.3s;
+	animation-fill-mode: both;
+}
+
+.introduccion{
+	margin: 10px 25%;
+	font-size: 25px;
+	color: #000;
+	font-weight: 700;
+	text-shadow:  0px 0px 4.5px #fff;
+	animation-name: titulo;
+	animation-delay: 1.8s;
+	animation-duration: 1.3s;
+	animation-fill-mode: both;
+}
+
+.lorem{
+	position: absolute;
+	display: block;
+	top: 500px ;
+}
+
+
+@media (min-width: 425px) and (max-width: 825px) {
+	.titulo-container{
+		top: 250px;
+	}
+}
+
+@media (max-width: 825px){
+	.container{
+
+	}
+	.titulo-container{
+		margin: 10px;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+
+	.titulo{
+		font-size: 60px;
+		animation-name: titulo-responsive;
+		animation-delay: 1s;
+		animation-duration: 1.3s;
+		animation-fill-mode: both;	
+	}
+
+	.titulo-2{
+		font-size: 35px;
+		animation-name: titulo-responsive;
+		animation-delay: 1.5s;
+		animation-duration: 1.3s;
+		animation-fill-mode: both;
+
+	}
+
+	.introduccion{
+		font-size: 20px;
+		margin: 35px 15% 10px;
+		color: #fff;
+		font-weight: 700;
+		text-shadow:  1px 5px 8px #000;
+		animation-name: introduccion-responsive;
+		animation-delay: 1.8s;
+		animation-duration: 1.3s;
+		animation-fill-mode: both;
+	}
+}
+
+@keyframes titulo{
+	0%{
+		color: transparent;
+		text-shadow: 0px 0px 4.5px transparent;
+		transform: translateX(-1000px);
+	}
+}
+
+@keyframes titulo-responsive{
+	0%{
+		color: transparent;
+		text-shadow: 0px 0px 4.5px transparent;
+		transform: translateY(-1000px);
+	}
+}
+
+@keyframes introduccion-responsive{
+	0%{
+		color: transparent;
+		text-shadow: 0px 0px 4.5px transparent;
+		transform: translateY(1000px);
+	}
+}

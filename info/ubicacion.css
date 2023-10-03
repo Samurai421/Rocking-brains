@@ -1,0 +1,15 @@
+.ubicacion{
+	object-fit: contain;
+	margin-right: 10px;
+	display: block;
+	width: 150px;
+	height: 150px;
+	float: right;
+	transition-duration: 1.5s;
+}
+
+.ubicacion:hover{
+	width: 250px;
+	height: 250px;
+	transition-duration: 1.5s;
+}
